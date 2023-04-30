@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.bg-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.nav-icon {
+    padding-top: 15px;
+    
+}
+
+
+
+.close-icon{
+    visibility: hidden;
+}
+
+
+.nav-items-text {
+    color: #12022f;
+    font-family: "Roboto";
+    font-weight: 600;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.sign-up-btn {
+    background-color: #ffdda9;
+    border-width: 0px;
+    color: #12022f;
+    font-family: "Roboto";
+    font-weight: 600;
+    text-align: center;
+    width: 90px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 20px;
+
+
+}
+
+.list-items {
+    font-family: "Roboto";
+    padding: 10px;
+    border-top: 1px solid #e7e5ea;
+    color: #594d6d;
+    list-style-type: none;
+}
+
+.nav-items-large-screen {
+    display: none;
+}
+
+.img-section {
+    background-image: url('https://assets.ccbp.in/frontend/intermediate-rwd/landing-page-sm-bg.png');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heding {
+    color: #ffffff;
+    font-family: "Roboto";
+    text-align: center;
+    font-size: 35px;
+    padding: 10px;
+}
+
+.displays {
+    visibility: hidden;
+}
+
+@media(max-width:576px) {
+    .nav-items {
+        display: none;
+    }
+}
+
+@media (min-width:768px) {
+    .nav-icon{
+        visibility: hidden;
+    }
+
+    .img-section {
+        background-image: url('https://assets.ccbp.in/frontend/intermediate-rwd/landing-page-lg-bg.png');
+    }
+
+    .heding {
+        font-size: 50px;
+        padding: 25px;
+    }
+    
+}
